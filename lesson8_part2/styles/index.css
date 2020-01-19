@@ -1,0 +1,146 @@
+.container__main {
+  max-width: 1300px;
+  min-width: auto;
+  height: 700px;
+  background-color: #fdde7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 30px;
+
+}
+
+
+
+.container__main-block--left {
+  position: relative;
+  display: flex;
+  width: 350px;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16 );
+  background-color: white;
+  margin-left: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.left-price {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 20px;
+  color: #02995b;
+}
+
+.container__main-block-smoke {
+
+}
+
+.img-smoke {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.container__main-block-cup {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main-block-cupbean {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icontainer__main-block-bean {
+  position: absolute;
+  z-index: 1;
+}
+
+.img-bean {
+  position: absolute;
+  top: 17px;
+  right: 60px;
+}
+
+.container__main-block--left-bronze {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2c2924;
+}
+
+.container__main-block--left-propose {
+  padding-bottom: 25px;
+}
+
+
+.container__main-block--center {
+  position: relative;
+  display: flex;
+  width: 350px;
+  height: 470px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16 );
+  background-color: white;
+  margin-left: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.left-price-center {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 20px;
+  color: #02995b;
+}
+
+
+.img-smoke {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.container__main-block-cup {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__main-block-cupbean {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icontainer__main-block-bean {
+  position: absolute;
+  z-index: 1;
+}
+
+.img-bean {
+  position: absolute;
+  top: 17px;
+  right: 60px;
+}
+
+.container__main-block--center-bronze {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2c2924;
+}
+
+.container__main-block--center-propose {
+  padding-bottom: 25px;
+}
