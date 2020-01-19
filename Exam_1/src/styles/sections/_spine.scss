@@ -1,0 +1,93 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.spine {
+    background-image: url("./../assets/images/888.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container {
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    }
+
+    &__block {
+        background-image: url("./../assets/images/777.png");
+        width: 100%;
+        max-width: 540px;
+        min-height: 370px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        padding: 40px 30px;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+
+        }
+
+
+        &-title {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: $primaryTextGrey;
+            margin-bottom: 20px;
+        }
+
+        &-subtitle {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: $primaryTextGrey;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &-text {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: $primaryTextGrey;
+            line-height: 1.8;
+        }
+
+        &-wrapper {
+            margin-top: 30px;
+            
+            &--button {
+                height: 60px;
+                min-width: 224px;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                transition: color $animTimeFast ease, border-color $animTimeFast ease, background-color $animTimeFast ease;
+                box-shadow: none;
+                outline: none;
+                cursor: pointer;
+                font-family: 'Aleo', serif;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+        }
+    }
+}

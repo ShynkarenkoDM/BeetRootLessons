@@ -1,0 +1,24 @@
+// Initial styles
+
+@import "./../styles/_fonts.scss";
+@import "./../styles/_animations.scss";
+@import "./../styles/_reboot.scss";
+@import "./../styles/_base.scss";
+@import "./../styles/_common.scss";
+
+// Block
+
+@import "./../styles/blocks/_button.scss";
+@import "./../styles/blocks/_header.scss";
+@import "./../styles/blocks/_title-block.scss";
+@import "./../styles/blocks/_item.scss";
+
+// Sections
+
+@import "./sections/_hero.scss";
+@import "./sections/_choose.scss";
+@import "./sections/_works.scss";
+@import "./sections/_pool.scss";
+@import "./sections/_spine.scss";
+@import "./sections/_testimonial.scss";
+@import "./sections/_footer.scss";

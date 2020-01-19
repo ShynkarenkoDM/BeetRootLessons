@@ -1,0 +1,19 @@
+/**
+* Mixins
+*/
+
+@mixin text-ellipsis {
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin display-flex($flex-direction,
+	$align-horizontal,
+	$align-vertical) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: $align-horizontal;
+	align-items: $align-vertical;
+}

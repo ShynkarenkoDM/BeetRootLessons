@@ -1,0 +1,120 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.testimonial {
+    background-image: url("./../assets/images/999.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container {
+        min-height: 736px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 90px;
+
+        @media screen and (max-width: $deviceSizeXXS) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__title {
+        font-family: 'Aleo', serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: $primaryTextGrey;
+        margin-bottom: 94px;
+        text-align: center;
+
+
+        @media screen and (max-width: $deviceSizeXMD) {
+            margin: 30px 0 30px 0;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: start;
+        min-height: 290px;
+        max-width: 1110px;
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $deviceSizeXMD) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    &__block-image {
+        background-image: url("./../assets/images/1111.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: local;
+        min-height: 290px;
+        max-width: 450px;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.article {
+    background-color: $backgroundPrimary;
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    max-width: 660px;
+    // height: 100%;
+    width: 100%;
+    padding: 16px 20px 16px 40px;
+
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        color: $primaryTextGrey;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: $primaryTextGrey;
+        line-height: 1.8;
+        text-indent: 30px;
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            content: open-quote;
+            color: $primaryHoverBlue;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 140px;
+            top: 56px;;
+            left: -39px;;
+            line-height: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    @media screen and (max-width: $deviceSizeXMD) {
+        max-width: 450px;
+        text-align: center;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $deviceSizeXXS) {
+        text-indent: 0;
+    }
+}
+

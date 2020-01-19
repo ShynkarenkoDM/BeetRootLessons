@@ -1,0 +1,175 @@
+@import "./../constants/index.scss";
+@import "./../mixins.scss";
+
+.choose {
+    background: url("./../assets/images/333.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container {
+            min-height: 685px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        
+            @media screen and (max-width: $deviceSizeSM) {
+                min-height: 685px;
+                display: flex;
+                align-items: center;
+              }
+
+              @media screen and (max-width: $deviceSizeXS) {
+                min-height: 620px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-bottom: 40px;
+              }
+     }
+      
+     &__title {
+         width: 100%;
+         max-width: 530px;
+         min-height: 450px;
+         display: flex;
+         flex-direction: column;
+         margin-right: 100px;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            margin-right: 40px;
+            min-height: 340px;
+        }
+
+        @media screen and (max-width: $deviceSizeXS) {
+            text-align: center;
+            align-items: center;
+            margin: 0;
+            min-height: 350px;
+        }
+
+     }
+
+     &__title-title {
+        font-family: 'Aleo', serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: $primaryTextGrey;
+        margin-top: 56px;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            margin: 0;
+        }
+
+        @media screen and (max-width: $deviceSizeXS) {
+            text-align: center;
+            margin: 0;
+        }
+
+        
+    }
+
+    &__title-subtitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: $primaryTextGrey;
+        margin-top: 40px;
+        line-height: 1.625;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            margin-top: 20px;
+        }
+    }
+
+         
+     &__button {
+        height: 60px;
+        max-width: 224px;
+        margin-top: 40px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        transition: color $animTimeFast ease, border-color $animTimeFast ease, background-color $animTimeFast ease;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Aleo', serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+
+        @media screen and (max-width: $deviceSizeSM) {
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: $deviceSizeXS) {
+            margin-top: 35px;
+        }
+     }
+
+
+
+     &__img-block {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 100%;
+         max-width: 470px;
+         min-height: 450px;
+
+         @media screen and (max-width: $deviceSizeSM) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 340px;
+            appearance: none;
+          }
+
+          @media screen and (max-width: $deviceSizeXS) {
+            flex-direction: column;
+            min-height: 180px;
+        }
+
+        &-wrapper {
+            height: 220px;
+            max-width: 350px;
+
+            &--img {
+                width: 100%;
+                height: 100%;
+            }
+
+            @media screen and (max-width: $deviceSizeSM) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 160px;
+                max-width: 260px;
+              }
+        }
+
+        :nth-child(2) {
+            margin-left: auto;
+
+            @media screen and (max-width: $deviceSizeSM) {
+                margin: 0;
+              }
+
+              @media screen and (max-width: $deviceSizeXS) {
+                display: none;
+            }
+        }
+
+        
+
+     }
+
+}
+
+  

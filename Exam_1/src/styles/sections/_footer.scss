@@ -1,0 +1,66 @@
+@import "./../constants/index.scss";
+
+.footer {
+    background-color: $backgroundPrimary;
+
+    &__container {
+        min-height: 270px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+
+        @media screen and (max-width: $deviceSizeXXS) {
+            padding-top: 0;
+        }
+    }
+
+    &__info-block {
+        max-width: 170px;
+        width: 100%;
+        min-height: 100px;
+        height: 100%;
+    }
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    &__icons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 16px;
+        width: 100%;
+    }
+
+    &__icons-wrapper--icon {
+        color: white;
+
+        &:hover {
+            color: $primaryBlue;
+        }
+    }
+}
+
