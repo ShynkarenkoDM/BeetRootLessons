@@ -1,0 +1,27 @@
+@import '../../../../styles/constants/index.scss';
+@import '../../../../styles/_mixins.scss';
+
+.navbar {
+  display: flex;
+
+  &__item {
+    color: $textSecondary;
+    margin-left: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+
+    &--active {
+      color: #16c774;
+    }
+
+    &:hover {
+      color: $primaryRed;
+      text-decoration: none;
+      border-top: 2px solid $primaryRed;
+      border-bottom: 2px solid $primaryRed;
+    }
+  }
+}

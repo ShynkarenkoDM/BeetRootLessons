@@ -1,0 +1,16 @@
+@import '../../../../newtask/src/styles/constants/colors';
+@import '../../styles/fonts.scss';
+
+.title {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $textSecondary;
+
+  &--padding-top {
+    padding-top: 60px;
+  }
+
+  &--margin-top {
+    margin-top: 30px;
+  }
+}

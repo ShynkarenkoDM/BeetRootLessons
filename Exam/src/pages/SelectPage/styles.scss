@@ -1,0 +1,32 @@
+@import '../../../../newtask/src/styles/constants/colors';
+@import '../../styles/fonts.scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.select {
+  min-height: 100vh;
+  background-color: #fbfbfb;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__search-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  &__search-btn-wrapper {
+    margin-left: 16px;
+  }
+}

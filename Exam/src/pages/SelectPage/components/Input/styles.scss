@@ -1,0 +1,27 @@
+@import '../../../../styles/constants/index.scss';
+@import '../../../../styles/mixins';
+
+.simple-input {
+  height: 60px;
+  background-color: $white;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  color: $textSecondary;
+  text-align: start;
+  padding: 0 24px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: $textSecondary;
+  }
+
+  &:focus {
+    border: 2px solid $primaryRed;
+  }
+}

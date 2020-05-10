@@ -1,0 +1,10 @@
+@import '../../styles/constants/index.scss';
+
+.content-container {
+  padding: 0 24px;
+  width: 100%;
+
+  &__inner-wrapper {
+    margin: 0 auto;
+  }
+}

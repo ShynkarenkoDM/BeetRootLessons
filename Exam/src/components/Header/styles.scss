@@ -1,0 +1,30 @@
+@import '../../styles/constants/index.scss';
+@import '../../styles/_mixins.scss';
+
+.header {
+  position: fixed;
+  top: calc(100vh - 80px);
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__logo {
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: $textPrimary;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../../newtask/src/styles/constants/colors';
+@import '../../styles/fonts.scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+  background-color: #fbfbfb;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
